@@ -65,4 +65,10 @@ class RestaurantTest {
                 ()->restaurant.removeFromMenu("French fries"));
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    @Test
+    public void Order_total_should_be_correct(){
+        Restaurant_Details_for_Testing();
+        String[] order = new String[]{"Vegetable lasagne","Sweet Corn soup"};
+        assertEquals(388,restaurant.getTotal(order));
+    }
 }

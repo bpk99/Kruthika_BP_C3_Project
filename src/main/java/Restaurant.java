@@ -70,4 +70,7 @@ public class Restaurant {
         this.closingTime = closingTime;
     }
 
+    public int getTotal(String[] order) {
+        return 0;
+    }
 }
