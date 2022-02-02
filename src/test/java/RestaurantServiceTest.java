@@ -23,7 +23,7 @@ public void Restaurant_Details_for_Testing(){
     public void searching_for_existing_restaurant_should_return_expected_restaurant_object() throws restaurantNotFoundException {
         //WRITE UNIT TEST CASE HERE
         Restaurant_Details_for_Testing();
-        assertEquals(restaurant,Test.findRestaurantByName("Amelie's cafe"));
+        assertEquals(restaurant.getName(),Test.findRestaurantByName("Amelie's cafe").getName());
     }
 
     //You may watch the video by Muthukumaran on how to write exceptions in Course 3: Testing and Version control: Optional content
